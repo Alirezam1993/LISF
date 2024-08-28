@@ -1,0 +1,35 @@
+FC              = mpifort
+FC77            = mpifort
+LD              = mpifort
+CC              = mpicc
+AR              = ar
+MOD_ESMF        = /cvmfs/hpcsw.umd.edu/spack-software/2022.06.15/linux-rhel8-zen2/gcc-9.4.0/esmf-8.2.0-vqynv7tsnes5yzrma36mlsrtyuys2a3c/include
+LIB_ESMF        = /cvmfs/hpcsw.umd.edu/spack-software/2022.06.15/linux-rhel8-zen2/gcc-9.4.0/esmf-8.2.0-vqynv7tsnes5yzrma36mlsrtyuys2a3c/lib
+INC_JPEG2000      = /cvmfs/hpcsw.umd.edu/spack-software/2022.06.15/linux-rhel8-zen2/gcc-9.4.0/jasper-3.0.3-77lpf4ipmjn24wtehhtt3yirx2qgprwf/include/
+LIB_JPEG2000      = /cvmfs/hpcsw.umd.edu/spack-software/2022.06.15/linux-rhel8-zen2/gcc-9.4.0/jasper-3.0.3-77lpf4ipmjn24wtehhtt3yirx2qgprwf/lib64/
+INC_ECCODES     = /cvmfs/hpcsw.umd.edu/spack-software/2022.06.15/linux-rhel8-zen2/gcc-9.4.0/eccodes-2.21.0-oltjwqp4q5fuq5g5vxmbceqwkouaboi5/include/
+LIB_ECCODES     = /cvmfs/hpcsw.umd.edu/spack-software/2022.06.15/linux-rhel8-zen2/gcc-9.4.0/eccodes-2.21.0-oltjwqp4q5fuq5g5vxmbceqwkouaboi5/lib64/
+INC_NETCDF      = /cvmfs/hpcsw.umd.edu/spack-software/2022.06.15/linux-rhel8-zen2/gcc-9.4.0/netcdf-fortran-4.5.3-zj24ojtcoty7aaohkqq6n763a3b6zuky/include/
+LIB_NETCDF      = /cvmfs/hpcsw.umd.edu/spack-software/2022.06.15/linux-rhel8-zen2/gcc-9.4.0/netcdf-fortran-4.5.3-zj24ojtcoty7aaohkqq6n763a3b6zuky/lib/
+INC_HDF4        = /cvmfs/hpcsw.umd.edu/spack-software/2022.06.15/linux-rhel8-zen2/gcc-9.4.0/hdf-4.2.15-l33aswhxfwh5k5mabmlrsmsegzt3p5ii/include/
+LIB_HDF4        = /cvmfs/hpcsw.umd.edu/spack-software/2022.06.15/linux-rhel8-zen2/gcc-9.4.0/hdf-4.2.15-l33aswhxfwh5k5mabmlrsmsegzt3p5ii/lib/
+INC_HDF5        = /cvmfs/hpcsw.umd.edu/spack-software/2022.06.15/linux-rhel8-zen2/gcc-9.4.0/hdf5-1.10.7-fjan65etjt7gsfdld7em6n2jmsh5mhxi/include/
+LIB_HDF5        = /cvmfs/hpcsw.umd.edu/spack-software/2022.06.15/linux-rhel8-zen2/gcc-9.4.0/hdf5-1.10.7-fjan65etjt7gsfdld7em6n2jmsh5mhxi/lib/
+INC_HDFEOS      = /cvmfs/hpcsw.umd.edu/spack-software/2022.06.15/linux-rhel8-zen2/gcc-9.4.0/hdf-eos2-2.20v1.00-k2rkju3naopjexiktjofjbvgoaf2rbff/include/
+LIB_HDFEOS      = /cvmfs/hpcsw.umd.edu/spack-software/2022.06.15/linux-rhel8-zen2/gcc-9.4.0/hdf-eos2-2.20v1.00-k2rkju3naopjexiktjofjbvgoaf2rbff/lib/
+LIB_MINPACK     = 
+INC_CRTM        = 
+LIB_CRTM        = 
+INC_PROF_UTIL   = 
+LIB_PROF_UTIL   = 
+INC_CMEM        = 
+LIB_CMEM        = 
+LIB_LAPACK      = 
+INC_PETSC       = 
+LIB_PETSC       = 
+CFLAGS          = -c  -DGFORTRAN -DLINUX -DLIS_JULES
+FFLAGS77        = -c -O2  -fbacktrace -DSPMD -fconvert=big-endian -DHIDE_SHR_MSG -DNO_SHR_VMATH -DGFORTRAN -DLINUX  -I$(MOD_ESMF) -I$(INC_ECCODES) -I$(INC_NETCDF) -I$(INC_HDFEOS) -I$(INC_HDF4) -I$(INC_HDF5) -DLIS_JULES
+FFLAGS          = -c -ffree-line-length-0 -O2  -fbacktrace -DSPMD -fconvert=big-endian -DHIDE_SHR_MSG -DNO_SHR_VMATH -DGFORTRAN -DLINUX  -I$(MOD_ESMF) -I$(INC_ECCODES) -I$(INC_NETCDF) -I$(INC_HDFEOS) -I$(INC_HDF4) -I$(INC_HDF5) -DLIS_JULES
+LDFLAGS         =  -L$(LIB_ESMF) -Wl,-rpath,$(LIB_ESMF) -lesmf -lstdc++ -lz -lmpi -L$(OPENBLAS_LIBDIR) -Wl,-rpath,$(OPENBLAS_LIBDIR) -lopenblas -L$(LIB_ECCODES) -Wl,-rpath,$(LIB_ECCODES) -leccodes_f90 -leccodes -L$(LIB_JPEG2000) -ljasper -L$(LIB_NETCDF) -Wl,-rpath,$(LIB_NETCDF) -L$(NETCDF_LIBDIR) -Wl,-rpath,$(NETCDF_LIBDIR) -lnetcdff -lnetcdf -L$(LIB_HDFEOS) -Wl,-rpath,$(LIB_HDFEOS) -lhdfeos -lGctp -L$(LIB_HDF4) -Wl,-rpath,$(LIB_HDF4) -lmfhdf -ldf -ljpeg -lz  -L$(LIB_HDF5) -Wl,-rpath,$(LIB_HDF5) -lhdf5_fortran -lhdf5_hl -lhdf5 -lz
+LIS_LIB_FLAGS   = -lesmf -lstdc++ -lz -leccodes_f90 -leccodes -ljasper -lnetcdff -lnetcdf -lhdfeos -lGctp -lmfhdf -ldf -ljpeg -lz -lhdf5_fortran -lhdf5_hl -lhdf5
+LIS_LIB_PATHS   = -L$(LIB_ESMF) -Wl,-rpath,$(LIB_ESMF) -L$(LIB_ECCODES) -Wl,-rpath,$(LIB_ECCODES) -L$(LIB_JPEG2000) -L$(LIB_NETCDF) -Wl,-rpath,$(LIB_NETCDF) -L$(NETCDF_LIBDIR) -Wl,-rpath,$(NETCDF_LIBDIR) -L$(LIB_HDFEOS) -Wl,-rpath,$(LIB_HDFEOS) -L$(LIB_HDF4) -Wl,-rpath,$(LIB_HDF4) -L$(LIB_HDF5) -Wl,-rpath,$(LIB_HDF5)
