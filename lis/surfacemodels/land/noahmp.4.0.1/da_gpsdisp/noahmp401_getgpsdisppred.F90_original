@@ -1,0 +1,83 @@
+!-----------------------BEGIN NOTICE -- DO NOT EDIT-----------------------
+! NASA Goddard Space Flight Center Land Information System (LIS) v7.2
+!
+! Copyright (c) 2015 United States Government as represented by the
+! Administrator of the National Aeronautics and Space Administration.
+! All Rights Reserved.
+!-------------------------END NOTICE -- DO NOT EDIT-----------------------
+!BOP
+! !ROUTINE: noahmp401_getgpsdisppred
+! \label{noahmp401_getgpsdisppred}
+!
+! !REVISION HISTORY:
+! 22 Dec 2017: Sujay Kumar; Initial Specification
+!
+! !INTERFACE:
+subroutine noahmp401_getgpsdisppred(n, k,obs_pred)
+! !USES:
+  use ESMF
+  use LIS_constantsMod
+  use LIS_coreMod
+  use LIS_logMod
+  use LIS_dataAssimMod
+  use LIS_DAobservationsMod
+  use noahmp401_lsmMod
+
+!EOP
+
+  implicit none
+! !ARGUMENTS: 
+  integer, intent(in)    :: n
+  integer, intent(in)    :: k
+  real                   :: obs_pred(LIS_rc%obs_ngrid(k),LIS_rc%nensem(n))
+
+!
+! !DESCRIPTION:
+!
+!  Returns the LAI obs pred (model's estimate of 
+!  observations) for data assimilation
+! 
+!  The arguments are: 
+!  \begin{description}
+!  \item[n] index of the nest \newline
+!  \item[obs\_pred] model's estimate of observations \newline
+!  \end{description}
+!EOP
+  integer                :: t
+  real                   :: tws_grid(LIS_rc%npatch(n,LIS_rc%lsm_index))
+  real,dimension(LIS_rc%obs_ngrid(k),LIS_rc%nensem(n)) :: tws_obsgrid
+  real,dimension(LIS_rc%obs_ngrid(k),LIS_rc%nensem(n)) :: gpsdisp
+
+
+  do t=1, LIS_rc%npatch(n,LIS_rc%lsm_index)
+  
+   tws_grid(t) = NOAHMP401_struc(n)%noahmp401(t)%sneqv  +         &!obs in mm
+                     (NOAHMP401_struc(n)%noahmp401(t)%canliq   +  &
+                     NOAHMP401_struc(n)%noahmp401(t)%canice)  +   &
+                     (NOAHMP401_struc(n)%noahmp401(t)%smc(1)  *         &   
+                     NOAHMP401_struc(n)%sldpth(1)*LIS_CONST_RHOFW)        +         &   
+                     (NOAHMP401_struc(n)%noahmp401(t)%smc(2)  *         &   
+                     NOAHMP401_struc(n)%sldpth(2)*LIS_CONST_RHOFW)        +         &   
+                     (NOAHMP401_struc(n)%noahmp401(t)%smc(3)  *         &   
+                     NOAHMP401_struc(n)%sldpth(3)*LIS_CONST_RHOFW)        +         &   
+                     (NOAHMP401_struc(n)%noahmp401(t)%smc(4)  *         &   
+                     NOAHMP401_struc(n)%sldpth(4)*LIS_CONST_RHOFW)        +         &   
+                     NOAHMP401_struc(n)%noahmp401(t)%wa   
+  enddo
+
+
+  call LIS_convertPatchSpaceToObsEnsSpace(n,k,&
+       LIS_rc%lsm_index, &
+       tws_grid,&
+       tws_obsgrid)
+
+
+  call noahmp401_LIS_gpsdisp(n, k,tws_obsgrid, gpsdisp)
+
+  obs_pred = gpsdisp
+
+!write(LIS_logunit,*)'JW DEBUG gpsdisp = ',gpsdisp
+
+
+end subroutine noahmp401_getgpsdisppred
+

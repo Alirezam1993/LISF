@@ -39,7 +39,7 @@ export LIS_LIBGEOTIFF=$GEOTIFF_ROOT
 # second line changed to -1 (debug) from 2(default)
 ./configure <<EOF
 1
-2
+-1
 2
 2
 0

@@ -214,6 +214,7 @@ module LIS_pluginIndices
    character*50, public,  parameter :: LIS_enkfId       = "EnKF"
    character*50, public,  parameter :: LIS_ensrfId      = "EnSRF"
    character*50, public,  parameter :: LIS_enksId       = "EnKS"
+   character*50, public,  parameter :: LIS_enksGPSId    = "EnKSGPS" ! Alireza Moghaddasi
    character*50, public,  parameter :: LIS_pfId         = "PF"
 !-------------------------------------------------------------------------
 ! perturbation algorithms
@@ -251,6 +252,7 @@ module LIS_pluginIndices
    character*50, public,  parameter :: LIS_modisscfId          = "MODIS SCF"
    character*50, public,  parameter :: LIS_GRACEtwsobsId       = "GRACE TWS"
    character*50, public,  parameter :: LIS_simGRACEJPLobsId    = "Simulated GRACE (JPL)"
+   character*50, public,  parameter :: LIS_GPSdispobsId        = "GPS Displacement" !JW
    character*50, public,  parameter :: LIS_synLbandTbobsId     = "Synthetic L-band Tb"
    character*50, public,  parameter :: LIS_SMOPSsmobsId        = "SMOPS soil moisture"
    character*50, public,  parameter :: LIS_SMOPS_ASCATsmobsId  = "SMOPS-ASCAT soil moisture" ! MN

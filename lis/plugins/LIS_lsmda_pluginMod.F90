@@ -157,6 +157,7 @@ subroutine LIS_lsmda_plugin
 
 #if ( ( defined DA_DIRECT_INSERTION ) || \
       ( defined DA_ENKS )             || \
+      ( defined DA_ENKSGPS )          || \
       ( defined DA_ENKF ) )
 
    use LIS_pluginIndices
@@ -203,8 +204,10 @@ subroutine LIS_lsmda_plugin
    use noahmp401_dasnodep_Mod
    use noahmp401_dausafsi_Mod
    use noahmp401_tws_DAlogMod, only : noahmp401_tws_DAlog
+   use noahmp401_gpsdisp_DAlogMod, only : noahmp401_gpsdisp_DAlog
    use noahmp401_datws_Mod
    use noahmp401_daveg_Mod
+   use noahmp401_dagpsdisp_Mod  !JW
 #endif
 
 
@@ -465,6 +468,17 @@ subroutine LIS_lsmda_plugin
 
    external noahmp36_transform_albedo
    external noahmp36_map_albedo
+
+! JW GPS
+!   external noahmp36_getgpsdisp
+!   external noahmp36_scale_gpsdisp 
+!   external noahmp36_getgpsdisppred
+!   external noahmp36_updategpsdisp
+!   external noahmp36_descale_gpsdisp
+!   external noahmp36_setgpsdispvars
+!   external noahmp36_qc_gpsdispobs
+!   external noahmp36_qcgpsdisp
+
 #endif
 
 #if ( defined SM_NOAHMP_4_0_1 ) 
@@ -497,6 +511,17 @@ subroutine LIS_lsmda_plugin
    external noahmp401_scale_veg
    external noahmp401_descale_veg
    external noahmp401_veg_DAlog
+
+
+! JW GPS 
+   external noahmp401_getgpsdisp
+   external noahmp401_setgpsdispvars
+   external noahmp401_qc_gpsdispobs
+   external noahmp401_qcgpsdisp
+   external noahmp401_getgpsdisppred
+   external noahmp401_scale_gpsdisp 
+   external noahmp401_descale_gpsdisp
+   external noahmp401_updategpsdisp
 
 !BL:NOAHMP4.0.1 TWS
    external noahmp401_gettws
@@ -2348,6 +2373,25 @@ subroutine LIS_lsmda_plugin
         trim(LIS_NASASMAPsmobsId )//char(0),noahmp36_descale_soilm)
    call registerlsmdaupdatestate(trim(LIS_noahmp36Id)//"+"//&
         trim(LIS_NASASMAPsmobsId )//char(0),noahmp36_updatesoilm)
+! JW GPS 36
+!   call registerlsmdainit(trim(LIS_noahmp36Id)//"+"//&
+!        trim(LIS_GPSdispobsId)//char(0),noahmp36_dagpsdisp_init)
+!   call registerlsmdagetstatevar(trim(LIS_noahmp36Id)//"+"//&
+!        trim(LIS_GPSdispobsId)//char(0),noahmp36_getgpsdisp)
+!   call registerlsmdasetstatevar(trim(LIS_noahmp36Id)//"+"//&
+!        trim(LIS_GPSdispobsId)//char(0),noahmp36_setgpsdispvars)
+!   call registerlsmdagetobspred(trim(LIS_noahmp36Id)//"+"//&
+!        trim(LIS_GPSdispobsId)//char(0),noahmp36_getgpsdisppred)
+!   call registerlsmdaqcstate(trim(LIS_noahmp36Id)//"+"//&
+!        trim(LIS_GPSdispobsId)//char(0),noahmp36_qcgpsdisp)
+!   call registerlsmdaqcobsstate(trim(LIS_noahmp36Id)//"+"//&
+!        trim(LIS_GPSdispobsId)//char(0),noahmp36_qc_gpsdispobs)
+!   call registerlsmdascalestatevar(trim(LIS_noahmp36Id)//"+"//&
+!        trim(LIS_GPSdispobsId)//char(0),noahmp36_scale_gpsdisp)
+!   call registerlsmdadescalestatevar(trim(LIS_noahmp36Id)//"+"//&
+!        trim(LIS_GPSdispobsId)//char(0),noahmp36_descale_gpsdisp)
+!   call registerlsmdaupdatestate(trim(LIS_noahmp36Id)//"+"//&
+!        trim(LIS_GPSdispobsId)//char(0),noahmp36_updategpsdisp)
 
 !YK
 ! Noah-MP.3.6 SMOS NRT NN soil moisture
@@ -2791,6 +2835,28 @@ subroutine LIS_lsmda_plugin
         trim(LIS_synsndId)//char(0),noahmp401_updatesnowvars)
    call registerlsmdaqcobsstate(trim(LIS_noahmp401Id)//"+"//&
         trim(LIS_synsndId)//char(0),noahmp401_qc_snowobs)
+
+! JW GPS
+   call registerlsmdainit(trim(LIS_noahmp401Id)//"+"//&
+        trim(LIS_GPSdispobsId)//char(0),noahmp401_dagpsdisp_init)
+   call registerlsmdagetstatevar(trim(LIS_noahmp401Id)//"+"//&
+        trim(LIS_GPSdispobsId)//char(0),noahmp401_getgpsdisp)
+   call registerlsmdasetstatevar(trim(LIS_noahmp401Id)//"+"//&
+        trim(LIS_GPSdispobsId)//char(0),noahmp401_setgpsdispvars)
+   call registerlsmdagetobspred(trim(LIS_noahmp401Id)//"+"//&
+        trim(LIS_GPSdispobsId)//char(0),noahmp401_getgpsdisppred)
+   call registerlsmdaqcstate(trim(LIS_noahmp401Id)//"+"//&
+        trim(LIS_GPSdispobsId)//char(0),noahmp401_qcgpsdisp)
+   call registerlsmdaqcobsstate(trim(LIS_noahmp401Id)//"+"//&
+        trim(LIS_GPSdispobsId)//char(0),noahmp401_qc_gpsdispobs)
+   call registerlsmdascalestatevar(trim(LIS_noahmp401Id)//"+"//&
+        trim(LIS_GPSdispobsId)//char(0),noahmp401_scale_gpsdisp)
+   call registerlsmdadescalestatevar(trim(LIS_noahmp401Id)//"+"//&
+        trim(LIS_GPSdispobsId)//char(0),noahmp401_descale_gpsdisp)
+   call registerlsmdaupdatestate(trim(LIS_noahmp401Id)//"+"//&
+        trim(LIS_GPSdispobsId)//char(0),noahmp401_updategpsdisp)
+   call registerlsmdadiagnosevars(trim(LIS_noahmp401Id)//"+"//&
+     trim(LIS_GPSdispobsId)//char(0),noahmp401_gpsdisp_DAlog)
 
 ! NoahMP-4.0.1 ESACCI soil moisture !2022.06.29 Pang
    call registerlsmdainit(trim(LIS_noahmp401Id)//"+"//&
@@ -4175,7 +4241,7 @@ subroutine LIS_lsmda_plugin
 #endif
 #endif 
 
-#endif  !endif for DA_DIRECT_INSERTION, DA_ENKS, or DA_ENKF
+#endif  !endif for DA_DIRECT_INSERTION, DA_ENKS, DA_ENKSGPS, or DA_ENKF
 
 end subroutine LIS_lsmda_plugin
 end module LIS_lsmda_pluginMod

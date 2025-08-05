@@ -277,6 +277,3 @@ subroutine GRACE_filename(name, ndir, yr, mo)
   name = trim(ndir)//'/GRACE_obs_'//trim(fyr)//trim(fmo)//&
        '.bin'
 end subroutine GRACE_filename
-
-
-

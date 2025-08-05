@@ -113,7 +113,7 @@ contains
                                       LIS_ticktime
     use LIS_surfaceModelMod,   only : LIS_surfaceModel_f2t, LIS_surfaceModel_run,&
                                       LIS_surfaceModel_output, LIS_surfaceModel_writerestart, &
-                                      LIS_surfaceModel_perturb_states
+                                      LIS_surfaceModel_perturb_states, LIS_surfaceModel_diagnoseVarsforDA
     use LIS_paramsMod,         only : LIS_setDynparams
     use LIS_metforcingMod,     only : LIS_get_met_forcing, LIS_perturb_forcing
     use LIS_perturbMod,        only : LIS_perturb_writerestart
@@ -200,6 +200,7 @@ contains
              call LIS_readDAobservations(n)
              call LIS_perturb_DAobservations(n)   
              call LIS_perturb_writerestart(n)
+             call LIS_surfaceModel_diagnoseVarsforDA(n)
              call LIS_dataassim_run(n)
              call LIS_dataassim_output(n)
              call LIS_surfaceModel_output(n)

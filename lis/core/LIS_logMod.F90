@@ -366,6 +366,7 @@ contains
 !EOP
       if ( ierr /= 0) then
        print*,'Error in the return code, Prgm Stopping...'
+       print*, 'Error code:', ierr
        call LIS_endrun
     endif
 

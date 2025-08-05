@@ -2,7 +2,7 @@
 #SBATCH -J LIS_v1  #job name
 #SBATCH -o slurm_LIS.o%j
 #SBATCH -A forman-prj-aac
-#SBATCH -t 2:00:00
+#SBATCH -t 7:00:00
 #SBATCH -N 1
 #SBATCH -n 1
 ####SBATCH --ntasks=112  try this as well!!

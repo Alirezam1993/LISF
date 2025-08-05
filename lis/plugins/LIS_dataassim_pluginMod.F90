@@ -133,6 +133,12 @@ subroutine LIS_dataassim_plugin
                                    enksgrace_final,enksgrace_diagnostics
 #endif
 
+#if ( defined DA_ENKSGPS )
+   use enksgps_Mod,       only : enksgps_init, enksgps_setup,        &
+                                   enksgps_increments, enksgps_update, &
+                                   enksgps_final, enksgps_diagnostics
+#endif
+
 #if ( defined DA_PF )
    use pf_Mod,            only : pf_init, pf_setup,                  &
                                    pf_increments, pf_update,           &
@@ -195,6 +201,17 @@ subroutine LIS_dataassim_plugin
    call registerapplyincrements(trim(LIS_enksId)//char(0),enksgrace_update)
    call registerdaoutput(trim(LIS_enksId)//char(0),enksgrace_diagnostics)
    call registerdafinalize(trim(LIS_enksId)//char(0),enksgrace_final)
+#endif
+
+#if ( defined DA_ENKSGPS )
+!GPS ENKS version
+   call registerdainit(trim(LIS_enksGPSId)//char(0),enksgps_init)
+   call registerdasetup(trim(LIS_enksGPSId)//char(0),enksgps_setup)
+   call registercomputeincrements(trim(LIS_enksGPSId)//char(0), &
+                                  enksgps_increments)
+   call registerapplyincrements(trim(LIS_enksGPSId)//char(0),enksgps_update)
+   call registerdaoutput(trim(LIS_enksGPSId)//char(0),enksgps_diagnostics)
+   call registerdafinalize(trim(LIS_enksGPSId)//char(0),enksgps_final)
 #endif
 
 #if ( defined DA_PF )

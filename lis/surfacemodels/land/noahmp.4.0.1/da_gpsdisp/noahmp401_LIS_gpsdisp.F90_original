@@ -1,0 +1,149 @@
+!-----------------------------------------------------------------
+! This subroutine prepares information required for model TWS 
+! to substract long-term model TWS mean to get model TWS anomalies
+! This subroutine is called by subroutine noahmp401_getgpsdisppred.F90
+!
+! Written by  Jing Wang (Jan. 2020)
+!-----------------------------------------------------------------
+
+subroutine noahmp401_LIS_gpsdisp(n, k , tws_obsgrid, gpsdisp)
+
+! !USES:
+  use ESMF
+  use LIS_logMod,   only: LIS_logunit, LIS_verify
+  use LIS_coreMod
+  use noahmp401_lsmMod
+  use LIS_mpiMod
+  use LIS_DAobservationsMod
+  use netcdf
+
+  implicit none
+! !ARGUMEMTS:
+  integer, intent(in)                    :: n
+  integer, intent(in)                    :: k
+  real,dimension(LIS_rc%obs_ngrid(k),LIS_rc%nensem(n)) :: tws_obsgrid
+  real,dimension(LIS_rc%obs_ngrid(k),LIS_rc%nensem(n)) :: gpsdisp
+
+  integer                                :: i, m, ii
+  integer                                :: iret, ncid
+  integer                                :: varid, varid1, varid2, varid3, ndomain
+  character(len=200)                     :: TWS_mean_fname
+  real, dimension(:), allocatable        :: lat1D, lon1D, TWS_mean
+  real                                   :: obs_lat, obs_lon, tws_lat, tws_lon
+  real                                   :: tws_mean_grid
+
+  real                                   :: delta_d,maxlat_obs,minlat_obs,maxlon_obs,minlon_obs
+  logical                                :: debug
+  logical                                :: file_exist
+  
+
+  !---------------------------------------------------------------------
+  ! debug option
+  debug = .true.
+
+  delta_d = 0.25 ! degree
+  
+  TWS_mean_fname = '/lustre/jwang1/LIS/TWS_long_term_mean_for_GPS_DA/long_term_mean_TWS.nc'
+
+
+  if (debug) then
+     write(LIS_logunit,*) 'TWS_mean_fname=', TWS_mean_fname
+  endif
+
+  inquire(file=TWS_mean_fname,exist=file_exist)
+
+  if (file_exist) then
+     write(LIS_logunit,*) 'Opening TWS long term mean file: '// trim(TWS_mean_fname)
+
+     call LIS_verify(nf90_open(trim(TWS_mean_fname), NF90_NOWRITE, ncid), &
+                           'ERROR reading long-term TWS mean netcdf file')
+
+
+     call LIS_verify(nf90_inq_varid(ncid, 'ndomain', varid), &
+                           'nf90_inq_varid for ndomain failed in LIS_gpsdisp')
+     call LIS_verify(nf90_get_var(ncid, varid, ndomain), &
+                           'nf90_get_var_int for ndomain failed in LIS_gpsdisp')
+
+  if (debug) then
+     write(LIS_logunit,*) 'ndomain=', ndomain
+  endif
+
+      allocate(TWS_mean(ndomain))
+      allocate(lat1D(ndomain))
+      allocate(lon1D(ndomain))
+     
+        call LIS_verify(nf90_inq_varid(ncid, 'lat1D', varid1), &
+                              'nf90_inq_varid for lat1D failed in LIS_gpsdisp')
+        call LIS_verify(nf90_get_var(ncid, varid1, lat1D), &
+                              'nf90_get_var for lat1D failed in LIS_gpsdisp')
+
+        call LIS_verify(nf90_inq_varid(ncid, 'lon1D', varid2), &
+                               'nf90_inq_varid for lon1D failed in LIS_gpsdisp')
+        call LIS_verify(nf90_get_var(ncid, varid2, lon1D), &
+                               'nf90_get_var for lon1D  failed in LIS_gpsdisp')
+
+        call LIS_verify(nf90_inq_varid(ncid, 'TWS_mean', varid3), &
+                               'nf90_inq_varid for TWS_mean failed in LIS_gpsdisp')
+        call LIS_verify(nf90_get_var(ncid, varid3, TWS_mean), &
+                                'nf90_get_var for TWS_mean failed in LIS_gpsdisp')
+
+       iret = nf90_close(ncid)
+
+        write(LIS_logunit,*) 'Reading long-term TWS mean netcdf file completed'
+   else
+     write(LIS_logunit,*) 'long-term TWS mean netcdf file does not exist'
+   endif
+
+!write(765,*)'JW DEBUG n = ',n
+!write(765,*)'JW DEBUG k = ',k
+!write(765,*)'JW DEBUG LIS_rc%obs_ngrid(k) = ',LIS_rc%obs_ngrid(k)
+!write(765,*)'JW DEBUG LIS_rc%nensem(n) = ',LIS_rc%nensem(n)
+
+   do i=1,LIS_rc%obs_ngrid(k)
+      do m=1,LIS_rc%nensem(n)
+
+     ! find latitude and longitude of observation and matching it to SVM grid
+     ! This is a temporary procedure before finilizing this routine.
+
+         obs_lat = LIS_obs_domain(n,k)%lat(i)
+         obs_lon = LIS_obs_domain(n,k)%lon(i)
+
+         minlon_obs = obs_lon - delta_d/2
+         maxlon_obs = obs_lon + delta_d/2
+         minlat_obs = obs_lat - delta_d/2
+         maxlat_obs = obs_lat + delta_d/2
+
+         gpsdisp(i,m) = -9999
+
+         do ii=1,ndomain
+
+           tws_lon = lon1D(ii) 
+           tws_lat = lat1D(ii)
+
+
+           if (((tws_lon .le. maxlon_obs) .and. (tws_lon .gt. minlon_obs)) .and. &
+              ((tws_lat .le. maxlat_obs) .and. (tws_lat .gt. minlat_obs)) .and. & 
+               (tws_lon .ne. -9999) .and. (tws_lat .ne. -9999) ) then
+
+              tws_mean_grid = TWS_mean(ii)
+              gpsdisp(i,m) = tws_obsgrid(i,m) - tws_mean_grid
+
+           !else
+
+            !   gpsdisp(i,m) = -9999
+
+           endif
+
+         enddo
+
+!write(765,*)'JW DEBUG i = ',i
+!write(765,*)'JW DEBUG m = ',m
+!write(765,*)'JW DEBUG tws_obsgrid(i,m) = ',tws_obsgrid(i,m)
+!write(765,*)'JW DEBUG gpsdisp(i,m) =',gpsdisp(i,m) 
+
+      enddo
+  enddo
+
+
+end subroutine noahmp401_LIS_gpsdisp
+

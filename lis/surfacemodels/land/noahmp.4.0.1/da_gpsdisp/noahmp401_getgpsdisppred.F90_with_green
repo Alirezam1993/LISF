@@ -1,0 +1,208 @@
+!-----------------------BEGIN NOTICE -- DO NOT EDIT-----------------------
+! NASA Goddard Space Flight Center
+! Land Information System Framework (LISF)
+! Version 7.5
+!
+! Copyright (c) 2024 United States Government as represented by the
+! Administrator of the National Aeronautics and Space Administration.
+! All Rights Reserved.
+!-------------------------END NOTICE -- DO NOT EDIT-----------------------
+!BOP
+! !ROUTINE: noahmp401_getgpsdisppred
+! \label{noahmp401_getgpsdisppred}
+!
+! !REVISION HISTORY:
+! 22 Dec 2017: Sujay Kumar; Initial Specification
+! Jan 2020: Jing Wang; Added GPS displacement functionality
+! Oct 2024: Alireza Moghaddasi; Updated with Green's function
+!
+! !INTERFACE:
+subroutine noahmp401_getgpsdisppred(n, k, obs_pred)
+! !USES:
+  use ESMF
+  use LIS_constantsMod
+  use LIS_coreMod
+  use LIS_logMod
+  use LIS_dataAssimMod
+  use LIS_DAobservationsMod
+  use noahmp401_lsmMod
+  use noahmp401_gpsdisp_DAlogMod
+  use LIS_mpiMod
+
+!EOP
+
+  implicit none
+! !ARGUMENTS: 
+  integer, intent(in)    :: n
+  integer, intent(in)    :: k
+  real                   :: obs_pred(LIS_rc%obs_ngrid(k),LIS_rc%nensem(n))
+
+!
+! !DESCRIPTION:
+!
+!  Returns the GPS displacement obs pred (model's estimate of 
+!  observations) for data assimilation.
+!  Uses a Green's function approach to map water storage anomalies
+!  to vertical displacement based on the Preliminary Reference Earth Model (PREM).
+! 
+!  The arguments are: 
+!  \begin{description}
+!  \item[n] index of the nest \newline
+!  \item[k] index of the observation type \newline
+!  \item[obs\_pred] model's estimate of observations \newline
+!  \end{description}
+!EOP
+  integer                :: t, i, m
+  real                   :: tws(LIS_rc%npatch(n,LIS_rc%lsm_index))
+  real                   :: tws_anomaly(LIS_rc%npatch(n,LIS_rc%lsm_index))
+  real,dimension(LIS_rc%obs_ngrid(k),LIS_rc%nensem(n)) :: tws_obs
+  real, parameter        :: tws_mean_reference = 0.0  ! Reference value for anomaly calculation
+  logical                :: debug
+  
+  ! Variables for Green's function
+  integer                :: current_day
+  real, parameter        :: disk_radius_km = 14.0  ! Disk radius in km (for 25km grid)
+  
+  ! Forward declare external functions
+  real, external         :: green_function_prem
+
+  debug = .false.
+  
+  ! Get the current day of month for retrieving stored column water
+  current_day = LIS_rc%da
+  
+  if (debug) then
+    write(LIS_logunit,*) '[DEBUG] Current day for GPS DA:', current_day
+  endif
+  
+  ! Use stored column water from DAlogMod instead of recalculating
+  if (.not.allocated(NOAHMPgpspred_struc)) then
+    write(LIS_logunit,*) '[ERROR] NOAHMPgpspred_struc not allocated in getgpsdisppred'
+    return
+  endif
+  
+  do t=1, LIS_rc%npatch(n,LIS_rc%lsm_index)
+    tws(t) = NOAHMPgpspred_struc(n)%clmnwater(current_day,t)
+    
+    ! Convert to TWS anomaly by subtracting reference mean
+    ! In a complete implementation, this would use a long-term average
+    tws_anomaly(t) = tws(t) - tws_mean_reference
+  enddo
+
+  if (debug) then
+    write(LIS_logunit,*) '[DEBUG] Retrieved TWS for day:', current_day
+  endif
+
+  ! Convert patch space TWS anomaly to observation/ensemble space
+  call LIS_convertPatchSpaceToObsEnsSpace(n,k,&
+       LIS_rc%lsm_index, &
+       tws_anomaly,&
+       tws_obs)
+
+  ! Apply Green's function to map TWS anomaly to GPS displacement
+  do i=1,LIS_rc%obs_ngrid(k)
+     do m=1,LIS_rc%nensem(n)
+      if (tws_obs(i,m) /= -9999.0) then
+        ! Use Green's function to convert water mass to GPS displacement
+        obs_pred(i,m) = green_function_prem(tws_obs(i,m), disk_radius_km)
+
+        if (debug) then
+          write(LIS_logunit,*) 'GPS point:', i, 'ensemble:', m
+          write(LIS_logunit,*) 'TWS anomaly:', tws_obs(i,m), 'GPS displacement:', obs_pred(i,m)
+        endif
+      else
+        obs_pred(i,m) = -9999.0
+      endif
+     enddo
+  enddo
+
+  if (debug) then
+    write(LIS_logunit,*) 'GPS displacement prediction completed'
+  endif
+
+end subroutine noahmp401_getgpsdisppred
+
+!BOP
+! 
+! !ROUTINE: green_function_prem
+!  \label{green_function_prem}
+! 
+! !INTERFACE:   
+real function green_function_prem(tws_anomaly, disk_radius_km) result(displacement)
+! 
+! !DESCRIPTION:    
+!
+! Green's function implementation based on the Preliminary Reference Earth Model (PREM)
+! as described in Farrell (1972) and Wahr et al. (2013).
+!
+! This implementation calculates vertical displacement caused by water loading,
+! using the formula:
+!
+! dr = Σ(l=0 to L) hl'*(4πGR/g(2l+1))*Pl(cos λ)
+!
+! where:
+! - hl' is the elastic load Love number
+! - G is Newton's gravitational constant
+! - R is Earth's radius
+! - g is gravitational acceleration at Earth's surface
+! - Pl is the Legendre polynomial of degree l
+! - λ is the angular distance from observation point to center of disk loading
+!
+! For a disk load, the formula is simplified by assuming the observation point
+! is at the center of the disk (λ = 0), and we compute the vertical displacement
+! directly from the TWS anomaly.
+!
+! inputs:
+!  tws_anomaly - water mass anomaly in kg/m^2 (equivalent to mm of water)
+!  disk_radius_km - radius of water loading disk in km
+!
+! outputs:
+!  displacement - vertical displacement in mm
+!
+!EOP
+    
+  implicit none
+    
+  ! Input arguments
+  real, intent(in) :: tws_anomaly         ! Water mass anomaly (kg/m^2)
+  real, intent(in) :: disk_radius_km      ! Radius of water loading disk (km)
+    
+  ! Local variables
+  real, parameter :: PI = 3.14159265359
+  real :: earthRadius_km = 6371.0         ! Earth radius in km
+  real :: disk_angular_radius             ! Angular radius of disk in radians
+  real :: greens_coefficient              ! Green's function coefficient (mm per kg/m^2)
+  
+  ! Constants for disk load calculation
+  real, parameter :: G = 6.67430e-11      ! Gravitational constant (m^3/kg/s^2)
+  real, parameter :: g = 9.80665          ! Surface gravity (m/s^2)
+  
+  ! Elastic load Love numbers (from PREM model)
+  ! These values are typically provided as tables. Here we use a single effective value
+  ! that represents the weighted sum for a disk load of specified radius
+  real, parameter :: effective_love_number = 0.6    ! Effective love number
+  
+  ! Calculate the angular radius of the disk
+  disk_angular_radius = disk_radius_km / earthRadius_km
+  
+  ! The Green's function coefficient represents the vertical displacement
+  ! per unit water mass loading for a disk of specified radius
+  ! This is a simplification of the full sum in equation (4) in the literature
+  
+  ! For a disk load at the observation point (λ = 0),
+  ! the coefficient approximately follows:
+  greens_coefficient = (4.0 * PI * G * earthRadius_km * 1000.0 * effective_love_number) / &
+                         (g * (1.0 - cos(disk_angular_radius)))
+  
+  ! Calculate displacement in mm
+  ! Converting tws_anomaly from kg/m^2 to vertical displacement
+  displacement = greens_coefficient * tws_anomaly
+  
+  ! Apply reasonableness limits to prevent extreme values
+  if (abs(displacement) > 100.0) then
+    displacement = sign(100.0, displacement)
+  endif
+    
+  return
+    
+end function green_function_prem

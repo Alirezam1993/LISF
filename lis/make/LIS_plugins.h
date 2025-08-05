@@ -99,6 +99,7 @@ See the LIS Users' Guide for more informaion.
 #define DA_ENSRF
 #define DA_EKF
 #define DA_ENKS
+#define DA_ENKSGPS
 #define DA_PF
 #define DA_OBS_SYNTHETICSM
 #define DA_OBS_SYNTHETICWL
@@ -137,6 +138,7 @@ See the LIS Users' Guide for more informaion.
 #define DA_OBS_NRT_SMAPSM
 #define DA_OBS_PILDAS
 #define DA_OBS_GRACE
+#define DA_OBS_GPS
 #define DA_CDF_TRANSFER_NASA_SMAPSM
 #define BE_bias_estimation
 #define PERT_perturbations

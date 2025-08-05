@@ -27,9 +27,9 @@ LIB_CMEM        =
 LIB_LAPACK      = 
 INC_PETSC       = 
 LIB_PETSC       = 
-CFLAGS          = -c  -DGFORTRAN -DLINUX -DLIS_JULES
-FFLAGS77        = -c -O2  -fbacktrace -DSPMD -fconvert=big-endian -DHIDE_SHR_MSG -DNO_SHR_VMATH -DGFORTRAN -DLINUX  -I$(MOD_ESMF) -I$(INC_ECCODES) -I$(INC_NETCDF) -I$(INC_HDFEOS) -I$(INC_HDF4) -I$(INC_HDF5) -DLIS_JULES
-FFLAGS          = -c -ffree-line-length-0 -O2  -fbacktrace -DSPMD -fconvert=big-endian -DHIDE_SHR_MSG -DNO_SHR_VMATH -DGFORTRAN -DLINUX  -I$(MOD_ESMF) -I$(INC_ECCODES) -I$(INC_NETCDF) -I$(INC_HDFEOS) -I$(INC_HDF4) -I$(INC_HDF5) -DLIS_JULES
+CFLAGS          = -c -g -O0 -DGFORTRAN -DLINUX -DLIS_JULES
+FFLAGS77        = -c -g -O0 -fbacktrace -DSPMD -fconvert=big-endian -DHIDE_SHR_MSG -DNO_SHR_VMATH -DGFORTRAN -DLINUX  -I$(MOD_ESMF) -I$(INC_ECCODES) -I$(INC_NETCDF) -I$(INC_HDFEOS) -I$(INC_HDF4) -I$(INC_HDF5) -DLIS_JULES
+FFLAGS          = -c -ffree-line-length-0 -g -O0 -fbacktrace -DSPMD -fconvert=big-endian -DHIDE_SHR_MSG -DNO_SHR_VMATH -DGFORTRAN -DLINUX  -I$(MOD_ESMF) -I$(INC_ECCODES) -I$(INC_NETCDF) -I$(INC_HDFEOS) -I$(INC_HDF4) -I$(INC_HDF5) -DLIS_JULES
 LDFLAGS         =  -L$(LIB_ESMF) -Wl,-rpath,$(LIB_ESMF) -lesmf -lstdc++ -lz -lmpi -L$(OPENBLAS_LIBDIR) -Wl,-rpath,$(OPENBLAS_LIBDIR) -lopenblas -L$(LIB_ECCODES) -Wl,-rpath,$(LIB_ECCODES) -leccodes_f90 -leccodes -L$(LIB_JPEG2000) -ljasper -L$(LIB_NETCDF) -Wl,-rpath,$(LIB_NETCDF) -L$(NETCDF_LIBDIR) -Wl,-rpath,$(NETCDF_LIBDIR) -lnetcdff -lnetcdf -L$(LIB_HDFEOS) -Wl,-rpath,$(LIB_HDFEOS) -lhdfeos -lGctp -L$(LIB_HDF4) -Wl,-rpath,$(LIB_HDF4) -lmfhdf -ldf -ljpeg -lz  -L$(LIB_HDF5) -Wl,-rpath,$(LIB_HDF5) -lhdf5_fortran -lhdf5_hl -lhdf5 -lz
 LIS_LIB_FLAGS   = -lesmf -lstdc++ -lz -leccodes_f90 -leccodes -ljasper -lnetcdff -lnetcdf -lhdfeos -lGctp -lmfhdf -ldf -ljpeg -lz -lhdf5_fortran -lhdf5_hl -lhdf5
 LIS_LIB_PATHS   = -L$(LIB_ESMF) -Wl,-rpath,$(LIB_ESMF) -L$(LIB_ECCODES) -Wl,-rpath,$(LIB_ECCODES) -L$(LIB_JPEG2000) -L$(LIB_NETCDF) -Wl,-rpath,$(LIB_NETCDF) -L$(NETCDF_LIBDIR) -Wl,-rpath,$(NETCDF_LIBDIR) -L$(LIB_HDFEOS) -Wl,-rpath,$(LIB_HDFEOS) -L$(LIB_HDF4) -Wl,-rpath,$(LIB_HDF4) -L$(LIB_HDF5) -Wl,-rpath,$(LIB_HDF5)
