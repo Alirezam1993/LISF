@@ -243,6 +243,11 @@ subroutine LIS_DAobs_plugin
     use GRACEobs_module,         only : GRACEobs_setup
 #endif
 
+!JW GPS Displacement
+#if ( defined DA_OBS_GPS )
+     use GPSdispObs_Mod,         only : GPSdispObs_setup
+#endif
+
 #if ( defined DA_OBS_PILDAS )
     use pildassmobs_module,      only : pildassmobs_setup
 #endif
@@ -445,6 +450,11 @@ subroutine LIS_DAobs_plugin
 
 #if ( defined DA_OBS_GRACE )
     external read_GRACEobs,  write_GRACEobs    
+#endif
+
+!JW GPS Displacement
+#if ( defined DA_OBS_GPS )
+    external read_GPSdispObs, write_GPSdispobs
 #endif
 
 #if ( defined DA_OBS_PILDAS )
@@ -826,6 +836,14 @@ subroutine LIS_DAobs_plugin
     call registerdaobssetup(trim(LIS_GRACEtwsobsId)//char(0),GRACEobs_setup)
     call registerreaddaobs(trim(LIS_GRACEtwsobsId)//char(0),read_GRACEobs)
     call registerwritedaobs(trim(LIS_GRACEtwsobsId)//char(0),write_GRACEobs)
+#endif
+
+! JW GPS Displacement
+#if ( defined DA_OBS_GPS )
+   call registerdaobsclass(trim(LIS_GPSdispobsId),"LSM")
+    call registerdaobssetup(trim(LIS_GPSdispobsId)//char(0),GPSdispObs_setup)
+    call registerreaddaobs(trim(LIS_GPSdispobsId)//char(0),read_GPSdispObs)
+    call registerwritedaobs(trim(LIS_GPSdispobsId)//char(0),write_GPSdispobs)
 #endif
 
 #if ( defined DA_OBS_PILDAS )

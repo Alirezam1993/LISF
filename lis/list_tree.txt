@@ -1,0 +1,1427 @@
+Scanning LIS directory structure from: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/routing
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/routing/HYMAP2_router
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/routing/HYMAP2_router/da_WL
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/routing/HYMAP2_router/runoffdata
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/routing/HYMAP2_router/runoffdata/GLDAS1data
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/routing/HYMAP2_router/runoffdata/GWBMIPdata
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/routing/HYMAP2_router/runoffdata/MERRA2data
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/routing/HYMAP2_router/runoffdata/ERAILanddata
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/routing/HYMAP2_router/runoffdata/LISoutput
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/routing/HYMAP2_router/runoffdata/NLDAS2data
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/routing/HYMAP2_router/runoffdata/GLDAS2data
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/routing/HYMAP_router
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/routing/HYMAP_router/runoffdata
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/routing/HYMAP_router/runoffdata/GLDAS1data
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/routing/HYMAP_router/runoffdata/GWBMIPdata
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/routing/HYMAP_router/runoffdata/MERRA2data
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/routing/HYMAP_router/runoffdata/ERAILanddata
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/routing/HYMAP_router/runoffdata/LISoutput
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/routing/HYMAP_router/runoffdata/NLDAS2data
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/routing/HYMAP_router/runoffdata/GLDAS2data
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/routing/NLDAS_router
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/routing/RAPID_router
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/routing/RAPID_router/src
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/params
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/params/roughness
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/params/roughness/ALMIPII
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/params/albedo
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/params/albedo/ALMIPII
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/params/gfrac
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/params/gfrac/ALMIPII
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/params/gfrac/SPORTDaily
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/params/gfrac/NESDISWeekly
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/params/gfrac/VIIRSDaily
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/params/lai
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/params/lai/ALMIPII
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/params/lai/MODIS
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/params/lai/MODIS_RT
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/params/emissivity
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/params/emissivity/ALMIPII
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.5-FOC
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.5-FOC/MRF_GHI
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.5-FOC/NRT_GLOBAL
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.5-FOC/NRT_GLOBAL/tables
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.5-FOC/NRT_GLOBAL/noah39_parms
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.5-FOC/NRT_GLOBAL/noahmp401_parms
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.5-FOC/NRT_GLOBAL/for_discover
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.5-FOC/NRT_GLOBAL/attribs
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.5-FOC/NRT_GLOBAL/JULES
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.5-FOC/NRT_GLOBAL/JULES/single_snow_layer
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.5-FOC/NRT_GLOBAL/JULES/ps41_nml_15min
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.5-FOC/NRT_STREAMFLOW
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.5-FOC/NRT_STREAMFLOW/JULES
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.5-FOC/NRT_STREAMFLOW/JULES/single_snow_layer
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.5-FOC/NRT_STREAMFLOW/JULES/ps41_nml_15min
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.5-FOC/NRT_STREAMFLOW/tables
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.5-FOC/NRT_STREAMFLOW/noahmp401_parms
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.5-FOC/NRT_STREAMFLOW/noah39_parms
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.5-FOC/NRT_STREAMFLOW/for_discover
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.5-FOC/NRT_STREAMFLOW/attribs
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.4-FOC
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.4-FOC/NRT_GLOBAL
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.4-FOC/NRT_GLOBAL/JULES
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.4-FOC/NRT_GLOBAL/JULES/ps41_nml_15min
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.4-FOC/NRT_GLOBAL/JULES/single_snow_layer
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.4-FOC/NRT_GLOBAL/tables
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.4-FOC/NRT_GLOBAL/noahmp401_parms
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.4-FOC/NRT_GLOBAL/noah39_parms
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.4-FOC/NRT_GLOBAL/for_discover
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.4-FOC/NRT_GLOBAL/attribs
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.3-FOC
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.3-FOC/tables
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.3-FOC/noah39_parms
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.3-FOC/noahmp401_parms
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.3-FOC/for_discover
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.3-FOC/attribs
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.3-FOC/JULES
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.3-FOC/JULES/single_snow_layer
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/configs/557WW-7.3-FOC/JULES/ps41_nml_15min
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/core
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/params
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/params/sport_gvf
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/params/viirs_gvf
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/irrigation
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/irrigation/noahmp3.6_gw
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/domains
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/domains/gaussian_t126
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/domains/gaussian_t126/ctl
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/domains/merc
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/domains/polar
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/domains/lambert
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/domains/latlon_idlcross
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/domains/gaussian_t1534
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/domains/gaussian_t1534/ctl
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/domains/lambert_buffer
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/geos5forecast
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/mrms
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/gswp1
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/RFE2gdas
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/afwa-cod
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/3B42RT
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/merra2
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/afwa-step3b
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/princetonV3
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/imerg_v06blate
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/3B42V6
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/gefs025degOperationalforcing
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/cmorph
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/plumber2
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/imerg_v05bfinal
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/pet_usgs
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/gdas
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/nam242
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/nldas2_netcdf
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/agrradps
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/gldas
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/pals
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/ecmwf
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/cmap
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/template
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/princeton
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/3B42V7
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/rfe2daily
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/stg4
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/nldas2
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/Bondville
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/gefsoperforcing
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/stg2
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/gswp2
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/WRFout
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/scan
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/afwa-galwem
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/metforcing/gefs
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/misc
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/misc/nesting
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/misc/grib1output
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/misc/tiling
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/misc/grib2output
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/misc/history
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/surfacemodels
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/surfacemodels/land
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/surfacemodels/land/jules.5.x
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/surfacemodels/land/jules.5.1
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/surfacemodels/land/noah.3.6
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/surfacemodels/land/jules.5.2
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/surfacemodels/land/ruc.3.7
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/surfacemodels/land/noahmp.3.6_cmem3
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/surfacemodels/land/jules.5.3
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/surfacemodels/land/vic.4.1.1
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/surfacemodels/land/noah.3.1
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/surfacemodels/land/noah.3.6_cmem3
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/surfacemodels/land/clm2
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/surfacemodels/land/jules.5.0
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/surfacemodels/land/clsm.f2.5
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/surfacemodels/land/hyssib
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/surfacemodels/land/awral.6.0.0
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/surfacemodels/land/awral.6.0.0/INPUT
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/surfacemodels/land/noah.3.3
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/surfacemodels/land/noah.3.9
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/surfacemodels/land/vic.4.1.1_stehekin
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/surfacemodels/land/template
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/surfacemodels/land/jules.5.4
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/surfacemodels/land/geowrsi.2
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/surfacemodels/land/noah.2.7.1
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/surfacemodels/land/vic.4.1.1_pilps
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/surfacemodels/land/noah.3.2
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/surfacemodels/land/SiB2
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/surfacemodels/land/mosaic
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/surfacemodels/land/noah.3.6_restart
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/paramest
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/paramest/ua_snow
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/dataassim
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/dataassim/ansa_scf
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/dataassim/enkf_sm_noah
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/dataassim/smos_nrt_nn_l2sm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/dataassim/wus_ucla
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/dataassim/SMAP_sm_pclimo_transfer
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/dataassim/enkf_sm_clsm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/dataassim/snodep_enkf_noah36
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/dataassim/ESA-CCI_passive_sm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/dataassim/ASCAT_sm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/dataassim/SMOPSv4
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/dataassim/di_sca_noah
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/dataassim/AMSREsm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/dataassim/enkf_swe_noah
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/dataassim/nasa_smap_enkf_noah36
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/dataassim/extendDA
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/coupling
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/testcases/coupling/cpl_wrf
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/offline
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/interp
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/lib
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/lib/lis-crtm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/lib/lis-crtm-profile-utility
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/lib/lis-crtm-profile-utility/test
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/lib/lis-crtm-profile-utility/test/Level_Layer_Conversion
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/lib/lis-crtm-profile-utility/test/Geopotential
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/lib/lis-crtm-profile-utility/test/Units_Conversion
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/lib/lis-crtm-profile-utility/test/Atmospheric_Properties
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/lib/lis-crtm-profile-utility/src
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/lib/lis-cmem3
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/runmodes
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/runmodes/RTMforward
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/runmodes/agrmetmode
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/runmodes/retrospective
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/runmodes/wrf_cpl_mode
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/runmodes/smootherDA
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/runmodes/landslide_optUE
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/runmodes/paramEstimation
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/runmodes/forecast
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/runmodes/nuopc_cpl_mode
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/runmodes/gce_cpl_mode
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/rtms
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/rtms/CRTM2
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/rtms/CRTM2EM
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/rtms/CRTM2EM/pe
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/rtms/CRTM2EM/pe/obspred
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/rtms/CRTM2EM/pe/obspred/CNRS
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/rtms/CRTM2EM/pe/obspred/AMSRE_SR
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/rtms/CRTM
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/rtms/LIS-CMEM3
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/rtms/LIS-CMEM3/pe
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/rtms/LIS-CMEM3/pe/obspred
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/rtms/LIS-CMEM3/pe/obspred/AMSRE_SR
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/rtms/TauOmegaRTM
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/arch
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/plugins
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/make
+GPSdispObs_Mod.d
+GPSdispObs_Mod.o
+GRACEobs_module.d
+GRACEobs_module.o
+read_GPSdispObs.d
+read_GRACEobs.d
+write_GPSdispobs.d
+write_GRACEobs.d
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/irrigation
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/irrigation/sprinkler
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/irrigation/drip
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/irrigation/flood
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/LICENSES
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/LICENSES/EIS_Visualization_Portal
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/RESTRICTED
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/domains
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/domains/latlon
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/domains/merc
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/domains/polar
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/domains/lambert
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/domains/catchment
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/domains/hrap
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/domains/gaussian
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/domains/UTM
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/genEnsFcst
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/usaf
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/vicforcing.4.1.2
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/nam242
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/3B42RTV7
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/agrradps
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/pet_usgs
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/WRFoutv2
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/princeton
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/WRFout
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/vicforcing
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/galwem_ge
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/WRFAKdom
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/gefs
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/merra2
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/AWAP
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/stg4
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/plumber2
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/snotel
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/templateMetForc
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/chirps2
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/Bondville
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/3B42V7
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/galwem
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/genMetForc
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/gldas
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/cmorph
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/gswp2
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/mogreps_g
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/RFE2Daily
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/3B42V6
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/cmap
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/Loobos
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/Loobos/code
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/gddp
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/mrms
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/imerg
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/pptEnsFcst
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/AWRAL
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/narr
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/gdasT1534
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/nldas-2.0
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/HiMAT_GMU
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/climatology
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/gswp1
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/gfs
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/geos5fcst
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/scan
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/geos_it
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/nldas2
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/era5
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/PALSmetdata
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/stg2
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/ecmwf
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/COAMPSout
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/RFE2gdas
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/gdas
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/metforcing/3B42RT
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/jules.5.1
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/vic.4.1.1
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/vic.4.1.1/physics
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/vic.4.1.1/physics/misc
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/awral.6.0.0
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/awral.6.0.0/physics
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/hyssib
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.2
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.2/pe
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.2/da_snow
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.2/da_soilm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.2/cpl_wrf_noesmf
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.2/da_snodep
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.2/sfc_crtm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.2/sfc_cmem3
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.2/routing
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/jules.5.3
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/jules.5.3/routing
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/jules.5.3/da_soilm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/mosaic
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/mosaic/da_soilm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/mosaic/sfc_cmem3
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/jules.5.4
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.6
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.6/routing
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.6/da_soilm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.6/pe
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.6/sfc_cmem3
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.6/da_snow
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.6/da_snodep
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.6/cpl_wrf_noesmf
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.2.7.1
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.2.7.1/pe
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.2.7.1/da_snow
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.2.7.1/da_scf
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.2.7.1/da_soilm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.2.7.1/da_multism
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.2.7.1/cpl_wrf_noesmf
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.2.7.1/da_tskin
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.2.7.1/da_snodep
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.2.7.1/da_snwd
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.2.7.1/sfc_crtm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.2.7.1/da_swe
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.2.7.1/sfc_cmem3
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.2.7.1/cpl_gce
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.2.7.1/routing
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.2.7.1/cpl_wrf_esmf
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/summa.1.0
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/summa.1.0/dshare
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/summa.1.0/noah-mp
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/summa.1.0/lapack
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/summa.1.0/engine
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/summa.1.0/hookup
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/summa.1.0/netcdf
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/clsm.f2.5
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/clsm.f2.5/da_snow
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/clsm.f2.5/da_soilm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/clsm.f2.5/irrigation
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/clsm.f2.5/da_tws
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/clsm.f2.5/routing
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/jules.5.2
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/jules.5.2/da_soilm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/jules.5.2/routing
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/cable
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/cable/physics
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/cable/cpl_wrf_noesmf
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.3
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.3/sfc_crtm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.3/routing
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.3/da_soilm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.3/pe
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.3/pe/obspred
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.3/pe/obspred/FLUXNET
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.3/pe/obspred/USDA_ARSsm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.3/pe/obspred/template
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.3/pe/obspred/LPRM_AMSREsm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.3/pe/obspred/ARM
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.3/sfc_cmem3
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.3/irrigation
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.3/da_snow
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.3/da_snodep
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.3/cpl_wrf_noesmf
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.3/sfc_tauomega
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noahmp.3.6
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noahmp.3.6/pe
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noahmp.3.6/pe/obspred
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noahmp.3.6/pe/obspred/ISMNsm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noahmp.3.6/pe/obspred/ARSsm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noahmp.3.6/pe/obspred/SMAPsm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noahmp.3.6/da_snow
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noahmp.3.6/da_soilm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noahmp.3.6/cpl_wrf_noesmf
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noahmp.3.6/da_snowSVM
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noahmp.3.6/irrigation
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noahmp.3.6/da_snodep
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noahmp.3.6/da_albedo
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noahmp.3.6/sfc_cmem3
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noahmp.3.6/da_LAI
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noahmp.3.6/da_tws
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noahmp.3.6/routing
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/vic.4.1.2.l
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/vic.4.1.2.l/physics
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/vic.4.1.2.l/routing
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/clm2
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/clm2/da_snow
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/clm2/da_soilm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/clm2/mksrfdata
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/clm2/riverroute
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/clm2/da_lst
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/clm2/cpl_wrf_noesmf
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/clm2/camclm_share
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/clm2/biogeochem
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/clm2/utils
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/clm2/utils/pilgrim
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/clm2/utils/timing
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/clm2/biogeophys
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/clm2/csm_share
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/clm2/main
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/clm2/cpl_wrf_esmf
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/clm2/ecosysdyn
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/template
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/jules.5.x
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/jules.5.x/routing
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/jules.5.x/da_soilm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/jules.5.x/da_usafsi
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/jules.5.x/da_snodep
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noahmp.4.0.1
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noahmp.4.0.1/routing
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noahmp.4.0.1/da_tws
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noahmp.4.0.1/cplsubLSM
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noahmp.4.0.1/da_soilm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noahmp.4.0.1/pe
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noahmp.4.0.1/pe/obspred
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noahmp.4.0.1/pe/obspred/UAsnow
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noahmp.4.0.1/da_LAI
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noahmp.4.0.1/irrigation
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noahmp.4.0.1/da_usafsi
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noahmp.4.0.1/da_snow
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noahmp.4.0.1/da_snodep
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noahmp.4.0.1/cpl_wrf_noesmf
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noahmp.4.0.1/phys
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noahmp.4.0.1/da_gpsdisp
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/geowrsi.2
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/subLSM
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/subLSM/snowmodel
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/subLSM/snowmodel/docs
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/subLSM/snowmodel/physics
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/subLSM/snowmodel/cplLSM
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/subLSM/crocus.8.1
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/subLSM/crocus.8.1/cplLSM
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/subLSM/crocus.8.1/phys
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.9
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.9/cplsubLSM
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.9/da_snow
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.9/da_soilm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.9/da_snodep
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.9/da_usafsi
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.9/routing
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/noah.3.9/phys
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/ruc.3.7
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/ruc.3.7/da_snow
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/ruc.3.7/da_soilm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/ruc.3.7/irrigation
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/ruc.3.7/routing
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/rdhm.3.5.6
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/rdhm.3.5.6/frz
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/rdhm.3.5.6/frz/.deps
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/rdhm.3.5.6/sac
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/rdhm.3.5.6/sac/.deps
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/rdhm.3.5.6/sachtet
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/rdhm.3.5.6/sachtet/.deps
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/rdhm.3.5.6/snow17
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/rdhm.3.5.6/snow17/.deps
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/jules.5.0
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/jules.5.0/routing
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/jules.5.0/da_soilm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/jules.5.0/da_usafsi
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/jules.5.0/da_snodep
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/land/jules.5.0/jules_nml
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/lake
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/lake/FLake.1.0
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/lake/FLake.1.0/physics
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/glacier
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/glacier/noahmp.3.9.1.1
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/glacier/noahmp.3.9.1.1/routing
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/glacier/template
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/openwater
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/surfacemodels/openwater/template
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/lis-mit
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/ensemble_downscale
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/ensemble_upscale
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/restartConverter
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/refman_scripts
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/restartGenAFWA
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/grads
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/nuopc_post
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/ueinit_generator
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-sealevel
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-sealevel/css
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-sealevel/css/images
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-sealevel/js
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-sealevel/images
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-fire
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-fire/images
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-fire/css
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-fire/css/images
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-fire/js
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-freshwater
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-freshwater/data
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-freshwater/webfonts
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-freshwater/css
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-freshwater/css/images
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-freshwater/js
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-freshwater/legend
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-freshwater/images
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-freshwater/Datasets
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-freshwater/Datasets/SoilMoist_tavg
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-freshwater/Datasets/Streamflow
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-freshwater/Datasets/Streamflow/USGS
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-freshwater/Datasets/Streamflow/LISDA
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-freshwater/Datasets/Streamflow/LISOL
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-freshwater/Datasets/Altimeter
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-toplanding
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-toplanding/media
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-toplanding/css
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-toplanding/img
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-toplanding/img/ico
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-toplanding/vendor
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-toplanding/vendor/bootstrap
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-toplanding/vendor/bootstrap/css
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-toplanding/vendor/bootstrap/js
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-toplanding/vendor/jquery-easing
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-toplanding/vendor/jquery
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-toplanding/vendor/fontawesome-free
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-toplanding/vendor/fontawesome-free/css
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-toplanding/vendor/fontawesome-free/webfonts
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-toplanding/js
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-toplanding/assets
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-toplanding/scss
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-toplanding/scss/base
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-toplanding/scss/components
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/eis_visualization_portal/eis-toplanding/scss/layout
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/usaf
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/usaf/s2s
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/usaf/s2s/global_usaf_forc
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/usaf/s2s/global_usaf_forc/input
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/usaf/s2s/global_usaf_forc/input/tables
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/usaf/s2s/global_usaf_forc/input/noah39_parms
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/usaf/s2s/s2s_modules
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/usaf/s2s/s2s_modules/bcsd_fcst
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/usaf/s2s/s2s_modules/bcsd_fcst/bcsd_library
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/usaf/s2s/s2s_modules/lis_darun
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/usaf/s2s/s2s_modules/lis_darun/tables
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/usaf/s2s/s2s_modules/lis_darun/noahmp401_parms
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/usaf/s2s/s2s_modules/lis_darun/attribs
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/usaf/s2s/s2s_modules/lis_darun/template_files
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/usaf/s2s/s2s_modules/s2splots
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/usaf/s2s/s2s_modules/ldt_ics
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/usaf/s2s/s2s_modules/ldt_ics/template_files
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/usaf/s2s/s2s_modules/s2smetric
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/usaf/s2s/s2s_modules/s2smetric/metrics_library
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/usaf/s2s/s2s_modules/s2spost
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/usaf/s2s/s2s_modules/lis_fcst
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/usaf/s2s/s2s_modules/lis_fcst/tables
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/usaf/s2s/s2s_modules/lis_fcst/template_files
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/usaf/s2s/s2s_modules/shared
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/usaf/s2s/for_discover
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/usaf/s2s/for_discover/lis
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/usaf/s2s/for_discover/ldt_params
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/usaf/s2s/for_discover/ldt
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/usaf/s2s/s2s_app
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/usaf/retune_bratseth
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/usaf/retune_bratseth/scripts
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/usaf/retune_bratseth/src
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/usaf/retune_bratseth/src/future
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/utils/usaf/retune_bratseth/cfgs
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/algorithm
+enksGPS
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/algorithm/enksgrace
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/algorithm/ekf
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/algorithm/pf
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/algorithm/enkf
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/algorithm/ensrf
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/algorithm/enksGPS
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/algorithm/di
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs
+GPS
+GRACE
+simGRACE_JPL
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/ESACCI_sm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/SMMR_SNWD
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/ANSA_SNWD
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/syntheticsf
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/GLASS_LAI
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/MODISsca
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/syntheticwl
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/SSMI_SNWD
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/SMOPS_AMSR2sm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/SMAP_E_OPLsm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/GRACE
+GRACEobs_module.F90
+read_GRACEobs.F90
+write_GRACEobs.F90
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/MODIS_SPORT_LAI
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/ANSA_SWE
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/SNODAS
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/SMOS_NRTNN_L2sm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/NASA_SMAPsm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/ASO_SWE
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/THySM
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/GLASS_Albedo
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/NASA_SMAPvod
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/VIIRS_GVF
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/USAFSI
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/simGRACE_JPL
+read_simGRACEJPLobs.F90
+simGRACEJPLobs_module.F90
+write_simGRACEJPLobs.F90
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/syntheticlst
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/SMOPS_SMAPsm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/SMOPS_SMOSsm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/MCD15A2H_LAI
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/SNODEP
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/multisynsmobs
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/GPS
+GPSdispObs_Mod.F90
+GPSdispObs_Mod.F90_old
+read_GPSdispObs.F90
+write_GPSdispobs.F90
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/ANSA_SCF
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/CDF_Transfer_NASA_SMAPsm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/SYN_LBAND_TB
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/hydrowebWL
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/syntheticSnowTb
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/SMOPS_ASCATsm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/SMOS_NESDIS
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/IMS_sca
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/WindSat_sm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/WUS_UCLAsnow
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/syntheticsm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/SMAP_NRTsm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/LPRM_AMSREsm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/NASA_AMSREsm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/CDFS_GVF
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/PMW_snow
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/GCOMW_AMSR2L3sm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/AMSRE_SWE
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/ASCAT_TUW
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/GCOMW_AMSR2L3SND
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/WindSat_Cband_sm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/syntheticswe
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/ISCCP_Tskin
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/pildas
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/syntheticsnd
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/obs/SMOS_L2sm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/perturb
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/perturb/uniform
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/perturb/gmaopert
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/biasEstimation
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/dataassim/biasEstimation/gmaoBE
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/apps
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/apps/landslide
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/apps/landslide/GLS
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/apps/landslide/GLS/pe_raint
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/apps/landslide/TRIGRS
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/optUE
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/optUE/type
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/optUE/type/paramestim
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/optUE/type/paramestim/obs
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/optUE/type/paramestim/obs/ISMNsm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/optUE/type/paramestim/obs/Macon_LS_data
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/optUE/type/paramestim/obs/CNRS
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/optUE/type/paramestim/obs/AMSRE_SR
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/optUE/type/paramestim/obs/pesynsm1
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/optUE/type/paramestim/obs/FLUXNET
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/optUE/type/paramestim/obs/ARSsm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/optUE/type/paramestim/obs/USDA_ARSsm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/optUE/type/paramestim/obs/wgPBMRsm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/optUE/type/paramestim/obs/Ameriflux
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/optUE/type/paramestim/obs/template
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/optUE/type/paramestim/obs/UAsnow
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/optUE/type/paramestim/obs/Global_LS_data
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/optUE/type/paramestim/obs/LPRM_AMSREsm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/optUE/type/paramestim/obs/SMAPsm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/optUE/type/paramestim/obs/ARM
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/optUE/type/paramestim/obs/ISCCP_Tskin
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/optUE/type/paramestim/obs/EmptyObs
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/optUE/type/paramestim/objfunc
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/optUE/type/paramestim/objfunc/P
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/optUE/type/paramestim/objfunc/LM
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/optUE/type/paramestim/objfunc/LL
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/optUE/type/paramestim/objfunc/LS
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/optUE/algorithm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/optUE/algorithm/MCSIM
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/optUE/algorithm/GA
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/optUE/algorithm/SCEUA
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/optUE/algorithm/DEMCz
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/optUE/algorithm/LM
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/optUE/algorithm/RWMCMC
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/optUE/algorithm/DEMC
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/optUE/algorithm/ES
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/forecast
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/forecast/algorithm
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/forecast/algorithm/ESPboot
+
+DIR: /home/alirezam/scratch/LIS_library/LISF_GPS_added/lis/forecast/algorithm/ESPconv

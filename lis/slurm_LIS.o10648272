@@ -1,0 +1,99 @@
+/usr/bin/.: Permission denied.
+Loading openmpi/gcc/9.4.0/zen2/4.1.1
+  Loading requirement: gcc/9.4.0
+Currently Loaded Modulefiles:
+ 1) gcc/9.4.0                                          
+ 2) openmpi/gcc/9.4.0/zen2/4.1.1                       
+ 3) openblas/gcc/9.4.0/zen2/0.3.18                     
+ 4) netcdf/gcc/9.4.0/openmpi/4.1.1/zen2/4.8.1          
+ 5) netcdf-fortran/gcc/9.4.0/openmpi/4.1.1/zen2/4.5.3  
+ 6) hdf4/gcc/9.4.0/zen2/4.2.15                         
+ 7) hdf5/gcc/9.4.0/openmpi/4.1.1/zen2/1.10.7           
+ 8) hdf-eos2/gcc/9.4.0/zen2/2.20v1.00                  
+ 9) jasper/gcc/9.4.0/zen2/3.0.3                        
+10) xerces-c/gcc/9.4.0/zen2/3.2.3                      
+11) esmf/gcc/9.4.0/zen2/8.2.0                          
+12) eccodes/gcc/9.4.0/openmpi/4.1.1/zen2/2.21.0        
+13) gdal/gcc/9.4.0/openmpi/4.1.1/zen2/3.4.0            
+14) python/gcc/9.4.0/nocuda/linux-rhel8-zen2/3.8.12    
+rm -f *.o *.mod LIS *.d Filepath
+/home/alirezam/.bash_profile: line 1: /home/alirezam/.bash_profile: Permission denied
+Loading openmpi/gcc/9.4.0/zen2/4.1.1
+  Loading requirement: gcc/9.4.0
+Currently Loaded Modulefiles:
+ 1) gcc/9.4.0                                          
+ 2) openmpi/gcc/9.4.0/zen2/4.1.1                       
+ 3) openblas/gcc/9.4.0/zen2/0.3.18                     
+ 4) netcdf/gcc/9.4.0/openmpi/4.1.1/zen2/4.8.1          
+ 5) netcdf-fortran/gcc/9.4.0/openmpi/4.1.1/zen2/4.5.3  
+ 6) hdf4/gcc/9.4.0/zen2/4.2.15                         
+ 7) hdf5/gcc/9.4.0/openmpi/4.1.1/zen2/1.10.7           
+ 8) hdf-eos2/gcc/9.4.0/zen2/2.20v1.00                  
+ 9) jasper/gcc/9.4.0/zen2/3.0.3                        
+10) xerces-c/gcc/9.4.0/zen2/3.2.3                      
+11) esmf/gcc/9.4.0/zen2/8.2.0                          
+12) eccodes/gcc/9.4.0/openmpi/4.1.1/zen2/2.21.0        
+13) gdal/gcc/9.4.0/openmpi/4.1.1/zen2/3.4.0            
+14) python/gcc/9.4.0/nocuda/linux-rhel8-zen2/3.8.12    
+------------------------------------------------------------------------
+Setting up configuration for LIS
+Parallelism (0-serial, 1-dmpar, default=1): Optimization level (-3=strict checks with warnings, -2=strict checks, -1=debug, 0,1,2,3, default=2): Assume little/big_endian data format (1-little, 2-big, default=2): Use GRIBAPI/ECCODES? (0-neither, 1-gribapi, 2-eccodes, default=2): Enable AFWA-specific grib configuration settings? (1-yes, 0-no, default=0): Use NETCDF? (1-yes, 0-no, default=1): NETCDF version (3 or 4, default=4): NETCDF use shuffle filter? (1-yes, 0-no, default = 1): NETCDF use deflate filter? (1-yes, 0-no, default = 1): NETCDF use deflate level? (1 to 9-yes, 0-no, default = 9): Use HDF4? (1-yes, 0-no, default=1): Use HDF5? (1-yes, 0-no, default=1): Use HDFEOS? (1-yes, 0-no, default=1): Use MINPACK? (1-yes, 0-no, default=0): Use LIS-CRTM? (1-yes, 0-no, default=0): Use LIS-CMEM? (1-yes, 0-no, default=0): Use LIS-LAPACK? (0-no, 1-mkl, 2-lapack/blas, 3-lapack/refblas, default=0): Use PETSc? (1-yes, 0-no, default=0): -----------------------------------------------------
+ configure.lis file generated successfully
+-----------------------------------------------------
+Settings are written to configure.lis in the make directory.
+If you wish to change settings, please edit that file.
+
+To compile, run the compile script.
+------------------------------------------------------------------------
+cat make/LIS_misc.h (showing defined interfaces)
+#define USE_NETCDF4 
+#define USE_GRIBAPI 
+#define USE_ECCODES 
+#undef AFWA_GRIB_CONFIGS 
+#define USE_HDF4 
+#define USE_HDFEOS2 
+#define USE_HDF5 
+#undef USE_MINPACK 
+#undef RTMS 
+#undef PETSc 
+#undef INC_WATER_PTS
+#undef COUPLED
+-------------------------------------------------------------------
+Compiling LIS
+
+[INFO] Compiling LIS source code
+
+Generating Filepath
+rm -f *.o *.mod LIS *.d Filepath
+./plugins.py
+vim -X -N -u NONE -i NONE -e -s -c '$s;$; ../offline;|wq' Filepath
+Generating dependencies for ../interp/zterp.F90
+Generating dependencies for ../core/xmrg_reverse_byte.c
+Generating dependencies for ../core/xmrg_read_header_c.c
+Generating dependencies for ../core/xmrg_read_data_c.c
+Generating dependencies for ../optUE/type/paramestim/obs/wgPBMRsm/write_wgPBMRsmdata.F90
+Generating dependencies for ../surfacemodels/land/vic.4.1.2.l/physics/write_vegvar.c
+Generating dependencies for ../optUE/type/paramestim/obs/template/write_templateObs.F90
+Generating dependencies for ../dataassim/obs/syntheticwl/write_syntheticwlobs.F90
+Generating dependencies for ../dataassim/obs/syntheticsnd/write_syntheticsndobs.F90
+Generating dependencies for ../dataassim/obs/syntheticsm/write_syntheticsmobs.F90
+Generating dependencies for ../surfacemodels/land/vic.4.1.2.l/write_prcp.c
+Generating dependencies for ../dataassim/obs/pildas/write_pildassmobs.F90
+Generating dependencies for ../surfacemodels/land/vic.4.1.2.l/physics/write_layer.c
+Generating dependencies for ../surfacemodels/land/vic.4.1.2.l/write_lakecon.c
+Generating dependencies for ../dataassim/obs/hydrowebWL/write_hydrowebWLobs.F90
+Generating dependencies for ../surfacemodels/land/vic.4.1.2.l/physics/write_header.c
+Generating dependencies for ../surfacemodels/land/vic.4.1.2.l/physics/write_forcing_file.c
+Generating dependencies for ../surfacemodels/land/vic.4.1.2.l/physics/write_data.c
+Generating dependencies for ../dataassim/obs/CDF_Transfer_NASA_SMAPsm/write_cdfTransfer_NASASMAPsmobs.F90
+Generating dependencies for ../surfacemodels/land/vic.4.1.2.l/write_bin_atmosdata.c
+Generating dependencies for ../surfacemodels/land/vic.4.1.2.l/write_atmosdata.c
+Generating dependencies for ../dataassim/obs/WUS_UCLAsnow/write_WUS_UCLAsnow.F90
+Generating dependencies for ../dataassim/obs/VIIRS_GVF/write_VIIRSgvfobs.F90
+Generating dependencies for ../optUE/type/paramestim/obs/USDA_ARSsm/write_USDA_ARSsm_obs_data.F90
+Generating dependencies for ../dataassim/obs/USAFSI/write_USAFSIobs.F90
+Generating dependencies for ../optUE/type/paramestim/obs/UAsnow/write_UAsnowobs.F90
+Generating dependencies for ../dataassim/obs/THySM/write_THySM.F90
+Generating dependencies for ../dataassim/obs/SSMI_SNWD/write_SSMISNWDsnow.F90
+Generating dependencies for ../dataassim/obs/SNODEP/write_SNODEPobs.F90
+slurmstepd: error: *** JOB 10648272 ON compute-a7-53 CANCELLED AT 2025-03-07T00:37:01 ***

@@ -1,0 +1,104 @@
+!-----------------------BEGIN NOTICE -- DO NOT EDIT-----------------------
+! NASA Goddard Space Flight Center
+! Land Information System Framework (LISF)
+! Version 7.5
+!
+! Copyright (c) 2024 United States Government as represented by the
+! Administrator of the National Aeronautics and Space Administration.
+! All Rights Reserved.
+!-------------------------END NOTICE -- DO NOT EDIT-----------------------
+!BOP
+! !ROUTINE: noahmp401_getgpsdisppred
+! \label{noahmp401_getgpsdisppred}
+!
+! !REVISION HISTORY:
+! Oct 2024: Alireza Moghaddasi; Simplified for daily GPS displacement DA
+!
+! !INTERFACE:
+subroutine noahmp401_getgpsdisppred(n, k, obs_pred)
+! !USES:
+  use ESMF
+  use LIS_constantsMod
+  use LIS_coreMod
+  use LIS_logMod
+  use LIS_DAobservationsMod
+  use noahmp401_lsmMod
+  use noahmp401_gpsdisp_DAlogMod
+
+!EOP
+
+  implicit none
+! !ARGUMENTS: 
+  integer, intent(in)    :: n
+  integer, intent(in)    :: k
+  real                   :: obs_pred(LIS_rc%obs_ngrid(k),LIS_rc%nensem(n))
+
+!
+! !DESCRIPTION:
+!
+!  Returns the GPS displacement obs pred (model's estimate of 
+!  observations) for data assimilation.
+!  
+!  Simplified approach following GRACE DA pattern: Use current day's TWS directly
+!  with simple scaling to convert to GPS displacement.
+! 
+!  The arguments are: 
+!  \begin{description}
+!  \item[n] index of the nest \newline
+!  \item[k] index of the observation type \newline
+!  \item[obs\_pred] model's estimate of observations \newline
+!  \end{description}
+!EOP
+  integer                :: t
+  real                   :: tws(LIS_rc%npatch(n,LIS_rc%lsm_index))
+  
+  ! Simple scaling factor to convert TWS (mm) to GPS displacement (mm)
+  ! This is a simplified approach - replace with Green's function later if needed
+  real, parameter        :: tws_to_gps_scale = 0.1  ! Simple scaling factor
+  
+  ! Initialize structures if needed
+  if (.not.allocated(NOAHMPgpspred_struc)) then
+    call initialize_gps_structures(n)
+    write(LIS_logunit,*) '[INFO] GPS-DA: Initialized structures in prediction function'
+  endif
+  
+  ! Get TWS from logged data (or calculate if not available)
+  if (allocated(NOAHMPgpspred_struc(n)%daily_tws)) then
+    ! Use logged TWS values
+    do t=1, LIS_rc%npatch(n,LIS_rc%lsm_index)
+      tws(t) = NOAHMPgpspred_struc(n)%daily_tws(t)
+    enddo
+  else
+    ! Calculate current TWS directly from model state
+    do t=1, LIS_rc%npatch(n,LIS_rc%lsm_index)
+      tws(t) = &
+           NOAHMP401_struc(n)%noahmp401(t)%sneqv   +         &
+           (NOAHMP401_struc(n)%noahmp401(t)%canliq  +         &
+           NOAHMP401_struc(n)%noahmp401(t)%canice) +         &
+           (NOAHMP401_struc(n)%noahmp401(t)%smc(1)  *         &
+           NOAHMP401_struc(n)%sldpth(1)*LIS_CONST_RHOFW)        +         &
+           (NOAHMP401_struc(n)%noahmp401(t)%smc(2)  *         &
+           NOAHMP401_struc(n)%sldpth(2)*LIS_CONST_RHOFW)        +         &
+           (NOAHMP401_struc(n)%noahmp401(t)%smc(3)  *         &
+           NOAHMP401_struc(n)%sldpth(3)*LIS_CONST_RHOFW)        +         &
+           (NOAHMP401_struc(n)%noahmp401(t)%smc(4)  *         &
+           NOAHMP401_struc(n)%sldpth(4)*LIS_CONST_RHOFW)        +         &
+           NOAHMP401_struc(n)%noahmp401(t)%wa
+    enddo
+  endif
+
+  ! Apply simple scaling to convert TWS to GPS displacement
+  ! Follow GRACE DA pattern - direct conversion
+  do t=1, LIS_rc%npatch(n,LIS_rc%lsm_index)
+    tws(t) = tws(t) * tws_to_gps_scale
+  enddo
+
+  ! Convert patch space to observation/ensemble space (same as GRACE DA)
+  call LIS_convertPatchSpaceToObsEnsSpace(n,k,&
+       LIS_rc%lsm_index, &
+       tws,&
+       obs_pred)
+
+  write(LIS_logunit,*) '[INFO] GPS displacement prediction completed for day:', LIS_rc%da
+
+end subroutine noahmp401_getgpsdisppred

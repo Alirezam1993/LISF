@@ -177,8 +177,8 @@ contains
     allocate(merra2_struc(LIS_rc%nnest))
 
     do n=1,LIS_rc%nnest
-       merra2_struc(n)%ncold = 576
-       merra2_struc(n)%nrold = 361
+       merra2_struc(n)%ncold = 113
+       merra2_struc(n)%nrold = 61
     enddo
 
     call readcrd_merra2()
@@ -197,11 +197,11 @@ contains
        gridDesci(n,1) = 0
        gridDesci(n,2) = merra2_struc(n)%ncold
        gridDesci(n,3) = merra2_struc(n)%nrold
-       gridDesci(n,4) = -90.000
-       gridDesci(n,5) = -180.000
+       gridDesci(n,4) = 25.000
+       gridDesci(n,5) = -130.000
        gridDesci(n,6) = 128
-       gridDesci(n,7) = 90.000
-       gridDesci(n,8) = 179.375
+       gridDesci(n,7) = 55.000
+       gridDesci(n,8) = -60.000
        gridDesci(n,9) = 0.625
        gridDesci(n,10) = 0.5
        gridDesci(n,20) = 0

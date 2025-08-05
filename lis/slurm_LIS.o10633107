@@ -1,0 +1,4 @@
+/usr/bin/.: Permission denied.
+Loading openmpi/gcc/9.4.0/zen2/4.1.1
+  Loading requirement: gcc/9.4.0
+slurmstepd: error: *** JOB 10633107 ON compute-a5-8 CANCELLED AT 2025-03-05T14:18:52 ***
