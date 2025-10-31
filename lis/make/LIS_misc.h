@@ -10,3 +10,4 @@
 #undef PETSc 
 #undef INC_WATER_PTS
 #undef COUPLED
+#undef USAF_LIS75_SMDA 

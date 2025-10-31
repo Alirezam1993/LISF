@@ -196,6 +196,7 @@ See the LIS Users' Guide for more informaion.
 #undef SM_JULES_5_X
 #define SM_CABLE
 #undef SM_FASST
+#define SM_AC_7_2
 #define SM_CLSM_F2_5
 #define SM_GEOWRSI_2
 #undef SM_RDHM_3_5_6

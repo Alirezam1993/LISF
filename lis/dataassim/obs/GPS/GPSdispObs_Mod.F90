@@ -53,6 +53,11 @@ module GPSdispObs_Mod
      integer           :: mo
      integer           :: alarmhr
      integer           :: useDistErr
+     ! Green's function configuration
+     character(len=256) :: love_file
+     integer           :: gf_lmax
+     real              :: gf_cutoff_km
+     integer           :: gf_use_kernel  ! 0=false, 1=true (integer for config compatibility)
   end type GPS_dec
 
   type(GPS_dec), allocatable :: GPS_struc(:)
@@ -143,6 +148,31 @@ contains
     do n=1, LIS_rc%nnest
         call ESMF_ConfigGetAttribute(LIS_config, GPS_struc(n)%useDistErr, rc=status)
         call LIS_verify(status, 'GPS use reported measurement error values: not defined')
+    enddo
+
+    ! Get Green's function configuration parameters
+    call ESMF_ConfigFindLabel(LIS_config, "GPS Green function Love number file:", rc=status)
+    do n=1, LIS_rc%nnest
+        call ESMF_ConfigGetAttribute(LIS_config, GPS_struc(n)%love_file, rc=status)
+        call LIS_verify(status, 'GPS Green function Love number file: not defined')
+    enddo
+    
+    call ESMF_ConfigFindLabel(LIS_config, "GPS Green function LMAX:", rc=status)
+    do n=1, LIS_rc%nnest
+        call ESMF_ConfigGetAttribute(LIS_config, GPS_struc(n)%gf_lmax, rc=status)
+        call LIS_verify(status, 'GPS Green function LMAX: not defined')
+    enddo
+    
+    call ESMF_ConfigFindLabel(LIS_config, "GPS Green function cutoff distance (km):", rc=status)
+    do n=1, LIS_rc%nnest
+        call ESMF_ConfigGetAttribute(LIS_config, GPS_struc(n)%gf_cutoff_km, rc=status)
+        call LIS_verify(status, 'GPS Green function cutoff distance (km): not defined')
+    enddo
+    
+    call ESMF_ConfigFindLabel(LIS_config, "GPS Green function use kernel:", rc=status)
+    do n=1, LIS_rc%nnest
+        call ESMF_ConfigGetAttribute(LIS_config, GPS_struc(n)%gf_use_kernel, rc=status)
+        call LIS_verify(status, 'GPS Green function use kernel: not defined')
     enddo
 
     ! Set initial attributes in OBS_State

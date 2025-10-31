@@ -83,13 +83,13 @@ subroutine noahmp401_getgpsdisp(n, LSM_State)
   call ESMF_FieldGet(sweField,localDE=0,farrayPtr=swe,rc=status)
   call LIS_verify(status,'ESMF_FieldGet failed for SWE in noahmp401_getgpsdisp')
 
-  do t=1,LIS_rc%npatch(n,LIS_rc%lsm_index) !to mm
+  do t=1,LIS_rc%npatch(n,LIS_rc%lsm_index)
      soilm1(t) = NOAHMP401_struc(n)%noahmp401(t)%smc(1)
      soilm2(t) = NOAHMP401_struc(n)%noahmp401(t)%smc(2)
      soilm3(t) = NOAHMP401_struc(n)%noahmp401(t)%smc(3)
      soilm4(t) = NOAHMP401_struc(n)%noahmp401(t)%smc(4)
      gws(t)    = NOAHMP401_struc(n)%noahmp401(t)%wa
-     swe(t) = noahmp401_struc(n)%noahmp401(t)%sneqv/1000.0 !to m
+     swe(t) = noahmp401_struc(n)%noahmp401(t)%sneqv  ! Keep in mm (matches TWS DA)
   enddo
 
 end subroutine noahmp401_getgpsdisp

@@ -196,7 +196,7 @@ subroutine noahmp401_setgpsdispvars(n, LSM_State)
 
      swe_old = noahmp401_struc(n)%noahmp401(t)%sneqv
 
-     dsneqv = swe(t)*1000.0 - noahmp401_struc(n)%noahmp401(t)%sneqv !in mm
+     dsneqv = swe(t) - noahmp401_struc(n)%noahmp401(t)%sneqv  ! Both in mm (matches TWS DA)
      dsnowh = 0.0  ! GPS DA does not update snow depth, only SWE
 
      call noahmp401_snow_update(n, t, dsneqv, dsnowh)
@@ -214,4 +214,6 @@ subroutine noahmp401_setgpsdispvars(n, LSM_State)
   enddo
 
 end subroutine noahmp401_setgpsdispvars
+
+
 
