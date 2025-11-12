@@ -82,7 +82,7 @@ module gmaopert_Mod
   logical                   :: p_xyCorr
   logical                   :: o_xyCorr
 
-  
+
   contains
 !BOP
 ! !ROUTINE: gmaopert_init
@@ -2037,6 +2037,7 @@ module gmaopert_Mod
       integer, allocatable      :: pertdata1d_patch_int(:)
       real, allocatable         :: dummy_var(:,:,:)
       logical                   :: file_exists
+      logical                   :: read_error
 
       do n = 1, LIS_rc%nnest
 
@@ -2065,12 +2066,21 @@ module gmaopert_Mod
          
          inquire( file=trim(LIS_rc%pertRestartFile(n)), exist=file_exists ) 
          if(file_exists .neqv. .true.) then
-            write(LIS_logunit,*) '[ERR] Reading perturbations restart file MISSING: ',&
+            write(LIS_logunit,*) '[WARN] Perturbations restart file MISSING (coldstart mode): ',&
                   trim(LIS_rc%pertRestartFile(n))
-            call LIS_endrun()
+            write(LIS_logunit,*) '[INFO] Skipping restart file read - continuing with coldstart perturbations'
+            call LIS_releaseUnitNumber(ftn)
+            cycle  ! Skip to next nest instead of ending run
          endif
 
-         open(ftn,file=trim(LIS_rc%pertRestartFile(n)), form='unformatted')
+         open(ftn,file=trim(LIS_rc%pertRestartFile(n)), form='unformatted', status='old', iostat=status)
+         if(status.ne.0) then
+            write(LIS_logunit,*) '[WARN] Cannot open perturbations restart file: ',&
+                  trim(LIS_rc%pertRestartFile(n))
+            write(LIS_logunit,*) '[INFO] Skipping restart file read - continuing with coldstart perturbations'
+            call LIS_releaseUnitNumber(ftn)
+            cycle  ! Skip to next nest instead of ending run
+         endif
          write(LIS_logunit,*) '[INFO] Reading perturbations restart file ',&
               trim(LIS_rc%pertRestartFile(n))
          
@@ -2128,7 +2138,9 @@ module gmaopert_Mod
                   do i =1, NRANDSEED
                      read(ftn) dummy_var
                   enddo
-                  deallocate(dummy_var)
+                  if(allocated(dummy_var)) then
+                     deallocate(dummy_var)
+                  endif
                endif
                
             endif
@@ -2200,7 +2212,9 @@ module gmaopert_Mod
                      enddo
                   endif
                enddo
-               deallocate(dummy_var)
+               if(allocated(dummy_var)) then
+                  deallocate(dummy_var)
+               endif
             endif
          endif   
 
@@ -2258,20 +2272,69 @@ module gmaopert_Mod
                   end if
                enddo
             else
+               read_error = .false.
                do k=1, LIS_rc%nperts
+                  ! Allocate dummy_var (Fortran will auto-deallocate if already allocated)
+                  if(allocated(dummy_var)) then
+                     deallocate(dummy_var)
+                  endif
                   allocate(dummy_var(&
-                       LIS_rc%obs_gnc(k),LIS_rc%obs_gnr(k),LIS_rc%nensem(n)))
+                       LIS_rc%obs_gnc(k),LIS_rc%obs_gnr(k),LIS_rc%nensem(n)), stat=status)
+                  if(status.ne.0) then
+                     write(LIS_logunit,*) '[WARN] Failed to allocate dummy_var for DA instance ',k
+                     read_error = .true.
+                     close(ftn)
+                     call LIS_releaseUnitNumber(ftn)
+                     exit  ! Exit k loop
+                  endif
+                  
                   if(trim(LIS_rc%perturb_obs(k)).ne."none") then  
                      do i =1, nobs(n,k)
-                        read(ftn) dummy_var
+                        read(ftn, iostat=status) dummy_var
+                        if(status.ne.0) then
+                           write(LIS_logunit,*) '[WARN] Error reading perturbations restart file at i=',i,' nobs=',nobs(n,k),' for DA instance ',k
+                           write(LIS_logunit,*) '[WARN] File may have mismatched nobs values. Skipping restart file read.'
+                           read_error = .true.
+                           if(allocated(dummy_var)) then
+                              deallocate(dummy_var)
+                           endif
+                           close(ftn)
+                           call LIS_releaseUnitNumber(ftn)
+                           exit  ! Exit k loop
+                        endif
                      enddo
-                     do i =1, NRANDSEED
-                        read(ftn) dummy_var
-                     enddo
+                     if(.not.read_error) then
+                        do i =1, NRANDSEED
+                           read(ftn, iostat=status) dummy_var
+                           if(status.ne.0) then
+                              write(LIS_logunit,*) '[WARN] Error reading perturbations restart file (rseed). Skipping restart file read.'
+                              read_error = .true.
+                              if(allocated(dummy_var)) then
+                                 deallocate(dummy_var)
+                              endif
+                              close(ftn)
+                              call LIS_releaseUnitNumber(ftn)
+                              exit  ! Exit k loop
+                           endif
+                        enddo
+                     endif
                   endif
-                  deallocate(dummy_var)
+                  
+                  ! Clean up dummy_var if no error occurred
+                  if(.not.read_error) then
+                     if(allocated(dummy_var)) then
+                        deallocate(dummy_var)
+                     endif
+                  endif
 
                enddo
+               if(read_error) then
+                  ! Final cleanup if we exited early
+                  if(allocated(dummy_var)) then
+                     deallocate(dummy_var)
+                  endif
+                  cycle  ! Skip to next nest
+               endif
 
             endif
          endif

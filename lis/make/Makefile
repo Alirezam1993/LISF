@@ -64,11 +64,25 @@ include ./configure.lis
 LIS: $(OBJS)
 	 $(FC) -o $@ $(OBJS) $(FOPTS) $(LDFLAGS)
 
-lislib: $(OBJS)
-	$(AR) ru lislib.a $(OBJS)
+LIBTARGET    =  lislib
+TARGETDIR    =  ./
+$(LIBTARGET) : 
+		gmake -i -r lis_contrib ; \
+		$(AR) lislib.a $(OBJS)  ; \
 
-explis: $(OBJS)
-	$(AR) ru ../../main/libwrflib.a $(OBJS)
+LIBTARGET    =  explis
+TARGETDIR    =  ./
+$(LIBTARGET) : 
+		gmake -i -r lis_contrib                  ; \
+		$(AR) -ru ../../main/libwrflib.a $(OBJS) ; \
+
+LIBTARGET    =  gcelis
+TARGETDIR    =  ./
+$(LIBTARGET) : 
+		gmake -i -r lis_contrib ; \
+		$(AR) lislib.a $(OBJS)  ; \
+
+lis_contrib: $(OBJS)
 
 .PHONY: debug
 debug:
@@ -155,22 +169,22 @@ endif
 ifeq ($(LIS_ARCH),linux_gfortran)
 # For MPI
 LIS_historyMod.o: LIS_historyMod.F90
-	$(FC) $(FFLAGS) -fallow-argument-mismatch $(HEADER_DIRS) $<
+	$(FC) $(FFLAGS) -Wargument-mismatch $(HEADER_DIRS) $<
 LIS_DAobservationsMod.o: LIS_DAobservationsMod.F90
-	$(FC) $(FFLAGS) -fallow-argument-mismatch $(HEADER_DIRS) $<
+	$(FC) $(FFLAGS) -Wargument-mismatch $(HEADER_DIRS) $<
 USAF_bratsethMod.o: USAF_bratsethMod.F90
-	$(FC) $(FFLAGS) -fallow-argument-mismatch $(HEADER_DIRS) $<
+	$(FC) $(FFLAGS) -Wargument-mismatch $(HEADER_DIRS) $<
 gmaopert_Mod.o: gmaopert_Mod.F90
-	$(FC) $(FFLAGS) -fallow-argument-mismatch $(HEADER_DIRS) $<
+	$(FC) $(FFLAGS) -Wargument-mismatch $(HEADER_DIRS) $<
 HYMAP2_routingMod.o: HYMAP2_routingMod.F90
-	$(FC) $(FFLAGS) -fallow-argument-mismatch $(HEADER_DIRS) $<
+	$(FC) $(FFLAGS) -Wargument-mismatch $(HEADER_DIRS) $<
 read_SMOSNRTNNL2sm.o: read_SMOSNRTNNL2sm.F90
-	$(FC) $(FFLAGS) -fallow-argument-mismatch $(HEADER_DIRS) $<
+	$(FC) $(FFLAGS) -Wargument-mismatch $(HEADER_DIRS) $<
 HYMAP2_model.o: HYMAP2_model.F90
-	$(FC) $(FFLAGS) -fallow-argument-mismatch $(HEADER_DIRS) $<
+	$(FC) $(FFLAGS) -Wargument-mismatch $(HEADER_DIRS) $<
 # For HDF-EOS2
 read_GLASSlai.o: read_GLASSlai.F90
-	$(FC) $(FFLAGS) -fallow-argument-mismatch $(HEADER_DIRS) $<
+	$(FC) $(FFLAGS) -Wargument-mismatch $(HEADER_DIRS) $<
 endif
 
 .PHONY: help

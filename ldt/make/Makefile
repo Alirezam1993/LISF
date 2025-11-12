@@ -127,12 +127,12 @@ version.F90:
 ifeq ($(LIS_ARCH),linux_gfortran)
 # For MPI
 LDT_historyMod.o: LDT_historyMod.F90
-	$(FC) $(FFLAGS) -fallow-argument-mismatch $(HEADER_DIRS) $<
+	$(FC) $(FFLAGS) -Wargument-mismatch $(HEADER_DIRS) $<
 # For HDF-EOS2
 readGLASSlaiObs.o: readGLASSlaiObs.F90
-	$(FC) $(FFLAGS) -fallow-argument-mismatch $(HEADER_DIRS) $<
+	$(FC) $(FFLAGS) -Wargument-mismatch $(HEADER_DIRS) $<
 readNASA_AMSREsmObs.o: readNASA_AMSREsmObs.F90
-	$(FC) $(FFLAGS) -fallow-argument-mismatch $(HEADER_DIRS) $<
+	$(FC) $(FFLAGS) -Wargument-mismatch $(HEADER_DIRS) $<
 endif
 
 .PHONY: help
