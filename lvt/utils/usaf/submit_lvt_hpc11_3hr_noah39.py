@@ -3,9 +3,9 @@
 #-----------------------BEGIN NOTICE -- DO NOT EDIT-----------------------
 # NASA Goddard Space Flight Center
 # Land Information System Framework (LISF)
-# Version 7.5
+# Version 7.8
 #
-# Copyright (c) 2024 United States Government as represented by the
+# Copyright (c) 2026 United States Government as represented by the
 # Administrator of the National Aeronautics and Space Administration.
 # All Rights Reserved.
 #-------------------------END NOTICE -- DO NOT EDIT-----------------------
@@ -66,8 +66,8 @@ fi
 
 # Environment
 module use --append /ccs/home/emkemp/hpc11/privatemodules
-module load lisf_7.6_prgenv_cray_8.5.0_cpe_23.12
-module load afw-python/3.11-202406
+module load lisf_7.6_prgenv_cray_8.6.0_cpe_25.03_cce_19.0.0
+module load afw-python/3.11-202511
 
 if [ ! -e ./LVT ] ; then
    echo "ERROR, LVT does not exist!" && exit 1

@@ -1,9 +1,9 @@
 !-----------------------BEGIN NOTICE -- DO NOT EDIT-----------------------
 ! NASA Goddard Space Flight Center
 ! Land Information System Framework (LISF)
-! Version 7.5
+! Version 7.8
 !
-! Copyright (c) 2024 United States Government as represented by the
+! Copyright (c) 2026 United States Government as represented by the
 ! Administrator of the National Aeronautics and Space Administration.
 ! All Rights Reserved.
 !-------------------------END NOTICE -- DO NOT EDIT-----------------------
@@ -202,7 +202,7 @@ subroutine define_AC_compartments(n, array)
   do r=1,LDT_rc%lnr(n)
      do c=1,LDT_rc%lnc(n)
         if (LDT_LSMparam_struc(n)%landmask%value(c,r,1).gt.0)then
-           array(c,r,:) = csizes(AquaCrop_struc(n)%cropt%value(c,r,1),:)
+           array(c,r,:) = csizes(int(AquaCrop_struc(n)%cropt%value(c,r,1)),:)
         else
            array(c,r,:) = LDT_rc%udef
         endif
